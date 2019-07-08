@@ -26,8 +26,9 @@ export default {};
   margin: 30px auto;
 
   display: grid;
-  grid-template-rows: 150px 150px;
-  grid-template-columns: 150px 150px 150px;
+  // grid-template-rows: 150px 150px;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
 
   grid-gap: 30px;
 }
