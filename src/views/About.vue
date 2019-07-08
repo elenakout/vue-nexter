@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <create-grid />
   </div>
 </template>
+
+<script>
+import createGrid from "@/components/about/createGrid.vue";
+export default {
+  name: "about",
+  components: {
+    createGrid
+  }
+};
+</script>
