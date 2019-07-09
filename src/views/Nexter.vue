@@ -6,7 +6,8 @@
 
 <script>
 export default {
-  name: "nexter"
+  name: "nexter",
+  components: {}
 };
 </script>
 

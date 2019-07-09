@@ -59,6 +59,7 @@ export default {};
   }
   &--6 {
     background-color: goldenrod;
+    grid-area: 1 / 2 / 2 / 3;
   }
 }
 </style>
