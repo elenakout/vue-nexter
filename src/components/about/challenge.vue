@@ -1,33 +1,34 @@
 <template>
   <div class="challenge">
-    <div class="header grid-item">
+    <div class="header ">
       Header
     </div>
-    <div class="small-box-1 grid-item">Small box 1</div>
-    <div class="small-box-2 grid-item">Small box 2</div>
-    <div class="small-box-3 grid-item">Small box 3</div>
-    <div class="sidebar grid-item">Sidebar</div>
-    <div class="main grid-item">Main content</div>
-    <div class="footer grid-item">Footer</div>
+    <div class="small-box-1">Small box 1</div>
+    <div class="small-box-2">Small box 2</div>
+    <div class="small-box-3">Small box 3</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main content</div>
+    <div class="footer">Footer</div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .challenge {
-  padding: 50px;
-  font-size: 30px;
-  font-family: sans-serif;
-  color: white;
+  width: 1000px;
+  margin: 30px auto;
 
   display: grid;
-  grid-template-rows: 1fr 3fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr 1fr;
   grid-template-columns: repeat(3, 1fr) 20%;
   grid-gap: 30px;
-}
 
-.grid-item {
-  background-color: orangered;
-  padding: 20px;
+  & > * {
+    background-color: orangered;
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+  }
 }
 
 .header {
@@ -36,12 +37,13 @@
 }
 
 .sidebar {
+  grid-column: 4 /5;
   grid-row: 2 / 4;
 }
 
 .main {
   grid-row: 3 / 4;
-  grid-column: 1 / 4;
+  grid-column: 1 / span 3;
 }
 
 .footer {
