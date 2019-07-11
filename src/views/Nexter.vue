@@ -129,4 +129,34 @@ export default {
   background-color: greenyellow;
   grid-column: full-start / col-end 4;
 }
+
+// TYPOGRAPHY
+%heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: var(--color-grey-light-1);
+  }
+  &--dark {
+    color: var(--color-grey-dark-1);
+  }
+}
 </style>

@@ -27,7 +27,7 @@
           href="../../assets/img/sprite.svg#icon-lock"
         ></use>
       </svg>
-      <h4 class="heading-4">{{ item.heading }}</h4>
+      <h4 class="heading-4 heading-4--dark">{{ item.heading }}</h4>
       <p class="feature__text">
         {{ item.text }}
       </p>
@@ -82,18 +82,27 @@ export default {
 
 <style lang="scss">
 .features-comp {
-  margin: 15rem;
+  margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
+  align-items: start;
 }
 
 .feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
   &__icon {
     fill: var(--color-primary);
     width: 4.5rem;
     height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
   }
 
   &__text {
