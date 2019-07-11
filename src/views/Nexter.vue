@@ -130,7 +130,6 @@ export default {
 }
 
 .story__pictures {
-  background-color: greenyellow;
   grid-column: full-start / col-end 4;
 }
 
