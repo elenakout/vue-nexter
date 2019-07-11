@@ -83,15 +83,9 @@ export default {
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr)
     [full-end];
-
-  & > * {
-    padding: 40px;
-    font-size: 3rem;
-  }
 }
 
 .features {
-  background-color: cornflowerblue;
   grid-column: center-start / center-end;
 }
 
