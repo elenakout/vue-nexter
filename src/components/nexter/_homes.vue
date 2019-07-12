@@ -46,8 +46,7 @@ export default {
           location: "USA",
           rooms: 5,
           area: 325,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-1.jpeg"
+          img: require("@/assets/img/house-1.jpeg")
         },
         {
           name: "Modern Glass Villa",
@@ -55,8 +54,7 @@ export default {
           location: "Canada",
           rooms: 6,
           area: 450,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-2.jpeg"
+          img: require("@/assets/img/house-2.jpeg")
         },
         {
           name: "Cozy Country House",
@@ -64,8 +62,7 @@ export default {
           location: "UK",
           rooms: 4,
           area: 250,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-3.jpeg"
+          img: require("@/assets/img/house-3.jpeg")
         },
         {
           name: "Large Rustical Villa",
@@ -73,8 +70,7 @@ export default {
           location: "Portugal",
           rooms: 6,
           area: 480,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-4.jpeg"
+          img: require("@/assets/img/house-4.jpeg")
         },
         {
           name: "Majestic Palace House",
@@ -82,8 +78,7 @@ export default {
           location: "Germany",
           rooms: 18,
           area: 4320,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-5.jpeg"
+          img: require("@/assets/img/house-5.jpeg")
         },
         {
           name: "Modern Family Apartment",
@@ -91,8 +86,7 @@ export default {
           location: "Italy",
           rooms: 3,
           area: 180,
-          img:
-            "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-6.jpeg"
+          img: require("@/assets/img/house-6.jpeg")
         }
       ]
     };

@@ -100,7 +100,6 @@ export default {
 }
 
 .header {
-  background-color: aquamarine;
   grid-column: full-start / col-end 6;
 }
 
@@ -140,6 +139,9 @@ export default {
 
 .heading-1 {
   @extend %heading;
+  font-size: 4.5rem;
+  color: var(--color-grey-light-1);
+  line-height: 1;
 }
 
 .heading-2 {
