@@ -30,7 +30,7 @@
         </svg>
         <p>${{ home.price }}</p>
       </div>
-      <button class="btn">Contact realtor</button>
+      <button class="btn home__button">Contact realtor</button>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ export default {
           name: "Large Rustical Villa",
           price: "1.950.000",
           location: "Portugal",
-          rooms: 18,
+          rooms: 6,
           area: 480,
           img:
             "https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Nexter/starter/img/house-4.jpeg"
@@ -111,27 +111,71 @@ export default {
 .home {
   background-color: var(--color-grey-light-1);
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+
   &__img {
     width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
   }
 
   &__like {
+    fill: var(--color-primary);
+    height: 2.5rem;
+    width: 2.5rem;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin: 1rem;
+    z-index: 2;
   }
 
   &__name {
+    background-color: var(--color-secondary);
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+    width: 80%;
+    transform: translateY(50%);
+
+    justify-self: center;
+    align-self: end;
+
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 3;
+  }
+
+  &__location,
+  &__rooms {
+    margin-top: 2.5rem;
   }
 
   &__location,
   &__rooms,
   &__area,
   &__price {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
     svg {
       fill: var(--color-primary);
       height: 2rem;
       width: 2rem;
+      margin-right: 1rem;
     }
-    p {
-    }
+  }
+
+  &__button {
+    grid-column: 1 / -1;
   }
 }
 </style>
