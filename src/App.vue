@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav" class="nav">
-      <router-link to="/" class="nav__item">Home</router-link>
-      <router-link to="/about" class="nav__item">About</router-link>
-      <router-link to="/nexter" class="nav__item">Nexter</router-link>
+    <div id="nav" class="mainnav">
+      <router-link to="/" class="mainnav__item">Home</router-link>
+      <router-link to="/about" class="mainnav__item">About</router-link>
+      <router-link to="/nexter" class="mainnav__item">Nexter</router-link>
     </div>
     <router-view />
   </div>
@@ -50,7 +50,7 @@ body {
   line-height: 1.6;
 }
 
-.nav {
+.mainnav {
   color: white;
   background-color: rgba(117, 117, 117, 0.808);
   height: 5vh;
