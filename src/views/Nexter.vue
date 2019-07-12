@@ -105,7 +105,6 @@ export default {
 }
 
 .homes {
-  background-color: burlywood;
   grid-column: center-start / center-end;
 }
 
