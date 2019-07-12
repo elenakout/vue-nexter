@@ -95,7 +95,7 @@ export default {
 }
 
 .gallery {
-  background-color: khaki;
+  background-color: var(--color-grey-light-1);
   grid-column: full-start / full-end;
 }
 
