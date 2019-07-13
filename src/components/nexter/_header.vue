@@ -64,11 +64,32 @@ export default {
     }
 
     &__seenon-text {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      align-items: center;
+      grid-column-gap: 1.5rem;
+
+      font-size: 1.6rem;
+      color: var(--color-grey-light-2);
+
+      &::before,
+      &::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor;
+      }
     }
 
     &__seenon-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 3rem;
+      justify-items: center;
+
       img {
         height: 2.5rem;
+        filter: brightness(70%);
       }
     }
   }
