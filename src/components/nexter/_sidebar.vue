@@ -12,6 +12,11 @@ export default {};
 .sidebar-comp {
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 62.5em) {
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .nav-btn {
@@ -37,6 +42,17 @@ export default {};
   }
   &::after {
     transform: translateY(1.3rem);
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    margin-top: 2.8rem;
+    margin-right: 3rem;
+    &::before {
+      transform: translateY(-1.2rem);
+    }
+    &::after {
+      transform: translateY(1rem);
+    }
   }
 }
 </style>

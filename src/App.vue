@@ -26,6 +26,10 @@
   // FONT VARIABLES
   --font-primary: "Nunito", sans-serif;
   --font-display: "Josefin Sans", sans-serif;
+
+  // RESPONSIVE BREAKPOINTS
+  $bp-largest: 75em; // 1200px
+  $bp-large: 62.5em; //1000px
 }
 
 * {
@@ -42,6 +46,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px (10px/16px=62.5%)
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
 }
 
 body {
