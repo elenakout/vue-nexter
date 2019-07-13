@@ -28,7 +28,7 @@
   --font-display: "Josefin Sans", sans-serif;
 
   // RESPONSIVE BREAKPOINTS
-  $bp-largest: 75em; // 1200px
+  $bp-largest: 75em; // 1200px / 16 = 75
   $bp-large: 62.5em; //1000px
 }
 
