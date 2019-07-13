@@ -7,10 +7,15 @@
     />
     <h3 class="heading-3">Your own home:</h3>
     <h1 class="heading-1">The ultimate personal freedom</h1>
-    <button class="btn">View our properties</button>
+    <button class="btn header__btn">View our properties</button>
     <div class="header__seenon-text">Seen on</div>
-    <div class="header__seenon-logos" v-for="(logo, idx) in logos" :key="idx">
-      <img :src="logo" alt="Seen on logo" />
+    <div class="header__seenon-logos">
+      <img
+        v-for="(logo, idx) in logos"
+        :key="idx"
+        :src="logo"
+        alt="Seen on logo"
+      />
     </div>
   </div>
 </template>
@@ -38,10 +43,24 @@ export default {
     url(../../assets/img/hero.jpeg);
   background-size: cover;
   background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  justify-content: center;
 
   .header {
     &__logo {
       height: 3rem;
+      justify-self: center;
+    }
+
+    &__btn {
+      align-self: start;
+      justify-self: start;
     }
 
     &__seenon-text {
